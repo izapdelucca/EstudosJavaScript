@@ -3,13 +3,14 @@
 //     Crie uma lista chamada frutas contendo as frutas: maçã, banana e laranja.
 //     Acesse o segundo item da lista e armazene em uma variável chamada frutaPreferida.
 
-                //0        //1      //2
+//0        //1      //2
 const frutas = ['maçã', 'banana', 'laranja'];
 
 frutaPreferida = frutas[1];
 
 // console.log(frutas);
 // console.log(frutaPreferida);
+
 
 // Adicionando e Removendo Itens:
 
@@ -20,6 +21,7 @@ frutas.push("uva"); //adiciona "uva" ao array
 frutas.shift(frutas[0]); //apaga o elemento da posição 0 do array
 
 // console.log(frutas);
+
 
 //Testando outros comandos
 
@@ -43,26 +45,27 @@ console.log(sortFruta);
 console.log(lenghtFruta);
 // console.log(words);
 
+
 //Métodos mais usados de listas: map, filter, reduce:
 
-const numbers = [1,2,3,4,5,6];
+const numbers = [1, 2, 3, 4, 5, 6];
 
 //MAP:
-const numbersMultipliedByTwo = numbers.map(function(number) {
+const numbersMultipliedByTwo = numbers.map(function (number) {
     return number * 2;
 })
 
 console.log(numbersMultipliedByTwo);
 
 //FILTER:
-const evenNumbers = numbers.filter(function(number){
+const evenNumbers = numbers.filter(function (number) {
     return number % 2 === 0;
 })
 
 console.log(evenNumbers);
 
 //REDUCE:
-const sumOfNumbers = numbers.reduce(function(number, accuulator) {
+const sumOfNumbers = numbers.reduce(function (number, accuulator) {
     return accuulator + number;
 }, 0)
 
